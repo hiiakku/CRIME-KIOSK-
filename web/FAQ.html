@@ -1,0 +1,292 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+	<title>Crimefile Management</title>
+	<link rel="stylesheet" href="style.css" type="text/css" charset="utf-8" />
+	<script language="javascript">
+function doCheck()
+{
+  var u=document.getElementById("username");
+  var p=document.getElementById("password");
+  var c=document.getElementById("conpass");
+  var n=document.getElementById("name");
+  var a=document.getElementById("address");
+  var pi=document.getElementById("pincode");
+  var ph=document.getElementById("phoneno");
+  var e=document.getElementById("email");
+  var v=document.getElementById("village");
+  var t=document.getElementById("taluk");
+  var d=document.getElementById("district");
+  var s=document.getElementById("state");
+  
+  if(u.value == "")
+  {
+    alert ("enter the username");
+	u.focus();
+	return false;
+	}
+  
+    if(p.value == "")
+  {
+    alert ("enter the password");
+	p.focus();
+	return false;
+	}
+	
+	else if((p.value.length)<6)   
+	{
+	 alert("password should contain atleast 6 characters ");
+	 p.focus();
+ return false;
+	 }
+	
+  if(c.value == "")
+  {
+    alert ("enter the confirm password");
+	c.focus();
+	return false;
+	}
+	
+		   if((c.value)!=(p.value))
+		   {
+		   alert("Re-enter the password");
+		   c.focus();
+		   return false;
+	}
+		   
+	
+	
+	
+	
+  if(n.value == "")
+  {
+    alert ("enter the name");
+    n.focus();
+	return false;
+	}
+	  if(a.value == "")
+  {
+    alert ("enter the address");
+	a.focus();
+	return false;
+	}
+
+  if(pi.value == "")
+  {
+    alert ("enter the pincode");
+	pi.focus();
+	return false;
+	}
+	
+	 else if(!parseInt(pi.value))
+		{    
+                    alert("Enter Integer");
+		    return false;	
+		}
+              else if(((pi.value.length)>6))
+	        {
+	               alert("Pin no: should contain 6 integers ");  	            
+	               pi.focus();
+	               return false;
+                 }
+	
+  if(ph.value == "")
+  {
+    alert ("enter the phone number");
+    
+	ph.focus();
+	return false;
+	}
+   else if(!parseInt(ph.value))
+		{    
+                    alert("Enter valid Phone number ");
+		    return false;	
+		}
+            else if(((ph.value.length)<6) || ((ph.value.length)>11))
+	                     {
+	               alert("Phone no should contain atleast 6 integers ");  
+	            
+	               ph.focus();
+                        return false;
+	                  }                 
+  
+    if(e.value == "")
+  {
+    alert ("enter the email");
+	e.focus();
+	return false;
+	}
+	
+	 else if(e.value.indexOf('@')==-1)
+		      {
+		       alert("Use @ email correctly");
+		       e.focus();
+		       return false;
+		      }
+	
+	  else if(e.value.indexOf('.')==-1)
+		       {
+		        alert("Use . email correctly");
+		        e.focus();
+		        return false;
+		       }
+	
+
+    if(v.value == "")
+  {
+    alert ("enter the village");
+	v.focus();
+	return false;
+	}
+	  if(t.value == "")
+  {
+    alert ("enter the taluk");
+	t.focus();
+	return false;
+	}
+  if(d.value == "")
+  {
+    alert ("enter the district");
+	d.focus();
+	return false;
+	}
+
+
+    if(s.value == "")
+  {
+    alert ("enter the state");
+	s.focus();
+	return false;
+	}
+
+  }
+  </script>
+    <style type="text/css">
+<!--
+.style1 {
+	color: #F67637;
+	font-family: "Monotype Corsiva";
+	font-size: 34px;
+}
+.style2 {color: #FF7F00}
+.style4 {color: #D6A55C}
+-->
+    </style>
+</head>
+
+<body>
+
+<div id="wrapper">
+	<div id="body">
+		<div id="head"></div>
+		<div id="topnav">
+			<a href="contactus.jsp">Contact Us</a> | <a href="http://www.google.com">Google</a>		</div>
+		<h1><img src="images/logo.jpg" width="401" height="271" alt="Logo" /></h1>
+		<div id="nav"><a href="index.html"><img src="images/m1.gif" width="101" height="65" alt="M1" /></a>
+		<a href="map.html"><img src="images/m2.gif" width="97" height="65" alt="M2" /></a><a href="FAQ.html"><img src="images/m3.gif" width="97" height="65" alt="M3" /></a><a href="searchhot.jsp"><img src="images/m4.gif" width="97" height="65" alt="M4" /></a>
+			<a href="aboutus .html"><img src="images/m5.gif" width="94" height="65" alt="M5" /></a>		</div>
+		<div id="left-box">
+			<div class="inner">
+				<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="271" height="132">
+                  <param name="movie" value="images/home_flash.swf" />
+                  <param name="quality" value="high" />
+                  <embed src="images/home_flash.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="271" height="132"></embed>
+			  </object>
+				<p>&nbsp;</p>
+			    <p>Already a registered member???</p>
+			    <p><a href="login.jsp">Login Here </a></p>
+			    <br /><br />
+				<p>Not a registered member???<br />  <a href="newregister.jsp">SignUp Here</a>.</p>
+			</div>
+		</div>
+	  <div id="content">
+	    <div id="content-bot">
+          <div class="inner">
+            
+            <div align="justify">
+              <table width="700" height="477" border="0" align="center">
+                <tr>
+                  <td width="690"><p class="style2">Frequently Asked Questions </p>
+                      <p class="style2">Q:<strong>How do I get a crime case registered? </strong><br />
+                        A:A crime case can be registered within the jurisdiction of a police station where the offence has been occurred. </p>
+                    <p class="style2">Q:<strong>Can the police say 'no' to register a crime case?</strong><br />
+                      A:Refusal to record on First Information Report on the ground that the place of crime does not full within the jurisdictions of the police station, amounts to dereliction of duty. Information about cognizable offence should be recorded and forwarded to the police station having jurisdiction. </p>
+                    <p class="style2">Q:<strong>Whether I have to sign the FIR for a crime case to be registered?</strong><br />
+                      A:Yes, the person giving information relating to the commission of a cognizable offence has to sign the FIR as per section 154(1) CrPC. </p>
+                    <p class="style2">Q:<strong>Whether I will get a copy of the FIR, registered on my compliant free of cost?</strong><br />
+                      A:Yes, a copy of the FIR shall be given to the informant free of cost as per section 154(2) CrPC. </p>
+                    <p class="style2">Q:<strong>Whether other than FIR, I have to put signature in a statement recorded  by the police during investigation of the case?</strong><br />
+                      A:No statement made by any person to a police officer in the course of an investigation shall if reduced into writing, be signed by the person making it as per section 162 CrPC. </p>
+                    <p class="style2">Q:<strong>Whether police can summon a lady/girl to the police station?</strong><br />
+                      A:Section 160 CrPC authorizes a police officer making an investigation to require the attendance before himself of any person, who appears to be acquainted with the circumstance of the case, but no male under 15 years or women shall be required to attend at any place other than place in which such male or women resides. </p>
+                    <p class="style2">Q:<strong>Whether I have to make same payment for report of a case?</strong><br />
+                      A:No payment is required to be given for all police service </p>
+                    <p class="style2">Q:<strong>Can I send a compliant by email?</strong><br />
+                      A:Yes, a complaint can be given to the police through email </p>
+                    <p class="style2">Q:<strong>Can I give a compliant over phone?</strong><br />
+                      A:Some times an information about the crime is communicated to the police on the telephone or it may be conveyed by telegram. As per law this sort of information is not FIR since it both lacks authenticity and it is not possible to obtain the signature of the informant. </p>
+                    <p class="style2">Q:<strong>Whether it is an offence to lodge a false report to the police?</strong><br />
+                      A:Lodging a false report with the police is made punishable under section 182 and 211 IPC </p>
+                    <p class="style2">Q:<strong>Can the Court interfere with the police investigation?</strong><br />
+                      A:The powers of the court to interfere at the stage of investigation by the police are indeed limited and the  same should not overlap the other, except for bails, habeas Corpus writ or a writ of mandamus  if the Investigation  be malafide. </p>
+                    <p class="style2">Q:<strong>For using loudspeakers for a public function from where I will get on sanction?</strong><br />
+                      A:Section 19(iv) of the Kerala Police Act 1960 prohibits or regulates the use of loud speakers in day public place and in any private place if their use causes annoyance to neighbours. The sanction for use of loud speakers may be obtained from the concerned Circle Inspectors Office. <br />
+                      <br />
+                      </p></td>
+                </tr>
+                                          </table>
+            </div>
+          </div>
+        </div>
+	  </div>
+		<div id="tray">
+			<div class="redbox first">
+		    <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="217" height="279">
+              <param name="movie" value="images/mw.swf" />
+              <param name="quality" value="high" />
+              <embed src="images/mw.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="217" height="279"></embed>
+            </object>
+		  </div>
+		  <div class="redbox">
+				<h2 align="center" class="style1">Hot Reports </h2>
+				<div>
+				 <div> <span class="style13">
+			     <marquee behavior="scroll" direction="up" scrolldelay="0.08">
+			     <span class="style4">			     Six criminal drug addictes were found on Wednesday from a house near Capro building in US. Two of them were evacuated to a hospital		         </span>
+			     </marquee>
+				 </span>  				</div> 
+			    </div>
+				<br />
+			  <a href="http://www.freewebsitetemplates.com"></a>			</div>
+			<div class="redbox last">
+			  <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="217" height="279">
+                  <param name="movie" value="images/missing.swf" />
+                  <param name="quality" value="high" />
+                  <embed src="images/missing.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="217" height="279"></embed>
+			  </object>
+		  </div>
+			<div class="clear"></div>
+			<div class="divider"></div>
+	  </div>
+		<div id="footer">
+			Copyright @ 2018, <a href="http://www.crimefilemanagement.com">www.cfm.com</a>, All rights Reserved.
+		</div>
+	</div>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
