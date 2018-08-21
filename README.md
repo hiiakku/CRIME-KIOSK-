@@ -26,8 +26,8 @@ Any Number of clients can connect to the server. Each user first makes their log
 ![alt text](https://github.com/hiiakku/CRIME-KIOSK-/blob/master/Crime%20Kiosk%20Website/web/2016dowry.jpg)
 
 # Some observations
-*	Crime head "Kidnapping" follows a uptrend for years 2014-2016 as there is a continuous increase in the number of cases registered. 
+*	Crime head "Kidnapping" follows a uptrend for years 2014-2016 with a continuous increase in the number of registered cases. 
 *	Crime head "Murder" has witnessed a decrement of 10 % in the number of crime cases reported.
 *	Crime head "Robbery" has a decreasing trend for 2014-2016 time gap.
-*	Crime head "Rape" has seen a growth in the  gap of 2015-2016.
+*	Crime head "Rape" has seen a growth in the gap of 2015-2016.
 *	Crime head "Dowry Deaths" has the lowest proportion in overall crime and has a static rate over the past years.
